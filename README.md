@@ -1,1 +1,3 @@
 # limerence
+
+[notion brainstorming page]
