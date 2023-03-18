@@ -8,9 +8,13 @@
     padding: 0;
     position: relative;
   }
+  body{
+    display: flex;
+    flex-direction: row;
+  }
   /* sketches */
   #sovereignty, #two-bodies {
-    position: absolute;
+    /* position: absolute; */
     /* background-color: grey; */
   }
   #sovereignty{
@@ -46,6 +50,10 @@
     width: 100%;
     z-index: -1;
     height: 100%;
+  }
+  #background-text{
+    opacity: .25;
+    font-size: 16;
   }
   img {
     width: 100%;
