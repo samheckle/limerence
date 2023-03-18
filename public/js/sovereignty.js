@@ -11,7 +11,7 @@ function sovereignty_sketch() {
   windowWidth = container.offsetWidth;
   windowHeight = container.offsetHeight;
 
-  // p5 object
+  // p5 object hi
   const s = (sketch) => {
     let drawCounter = 0;
     let mouseXBound;
