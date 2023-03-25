@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+    <title>❤️‍🩹</title>
+  </head>
+  <body>
+    <script>
+      let bg;
+
+      let petals = [];
+      var index_petals = 0;
+
+      var words = ["do they love me", "they don't", "they love me", "love me"];
+      var index_words = 0;
+
+      function preload() {
+        for (var i = 0; i < 25; i++) {
+          petals[i] = loadImage("../windows/flower/petal_" + i + ".png");
+        }
+      }
+
+      function setup() {
+        createCanvas(windowWidth, windowHeight);
+        // background(255);
+        background(color(255, 254, 244));
+        
+      }
+      let t = "";
+      let textBox;
+      function draw() {
+        // background(color(255,254,244));
+        fill(0);
+        textSize(32);
+        // textWrap("WORD");
+        textBox = text(t, 0, 0, windowWidth, windowHeight);
+        image(petals[0], 0, 0);
+        for (let i = 1; i < index_petals; i++) {
+          image(petals[i], 0, 0);
+        }
+      }
+
+      function mousePressed() {
+        t += words[index_words] + " ";
+        index_words = index_words + 1;
+
+        if (index_words == words.length) {
+          //resets code to restart again
+          index_words = 0;
+        }
+        if (t.length >= 712) {
+          t = "";
+          background(color(255,254,244));
+        }
+
+        index_petals = index_petals + 1;
+
+        if (index_petals == petals.length) {
+          //resets code to restart again
+          index_petals = 0;
+          background(color(255, 254, 244));
+        }
+    }
+    </script>
+  </body>
+</html>

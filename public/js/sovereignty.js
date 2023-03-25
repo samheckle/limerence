@@ -8,6 +8,8 @@ function sovereignty_sketch() {
   container = document.getElementById("sovereignty");
 
   // offset width / height includes margin + padding
+  // container.style.width = "500px"
+  console.log(container.offsetWidth)
   windowWidth = container.offsetWidth;
   windowHeight = container.offsetHeight;
 
@@ -20,10 +22,8 @@ function sovereignty_sketch() {
       "there is no sovereignty outside of relationships, we are always in a loosely woven state of becoming";
     var idx = 0;
     let clicked = false;
-    let fontsize = 10;
+    let fontsize = 15;
     sketch.setup = () => {
-      windowWidth = container.offsetWidth;
-      windowHeight = container.offsetHeight;
       let canvas = sketch.createCanvas(windowWidth, windowHeight);
       canvas.parent("sovereignty");
       sketch.frameRate(15);
