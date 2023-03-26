@@ -34,11 +34,9 @@ window.onload = () => {
     } else if (words[i] == "[") {
       link = true;
     } else if (link && words[i] != "]") {
-      console.log(link);
       linkText += words[i];
     } else if (words[i] == "]") {
       let a = document.createElement("a");
-      console.log(linkText);
       a.innerHTML = linkText;
       a.id = links[numLinks];
       span.classList.add("link");
@@ -65,10 +63,9 @@ window.onload = () => {
 };
 
 document.addEventListener("click", (e) =>{
-  console.log(e.target)
   if(e.target.id == "refuge"){
     window.open(
-      "/public/windows/two-bodies.html",
+      "../windows/two-bodies.html",
       "targetWindow",
       "popup=yes, width=500, height=500, left=10, top=100, toolbar=no, resizable=no,status=no,menubar=no"
     );
@@ -76,7 +73,7 @@ document.addEventListener("click", (e) =>{
   }
   if(e.target.id == "fulfillment"){
     window.open(
-      "/public/windows/petals.html",
+      "../windows/petals.html",
       "targetWindow",
       "popup=yes, width=640, height=640, left=400, top=200, toolbar=no, resizable=no,status=no,menubar=no"
     );
