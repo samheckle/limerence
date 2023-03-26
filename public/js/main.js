@@ -63,9 +63,12 @@ window.onload = () => {
 };
 
 document.addEventListener("click", (e) =>{
+  // let script = document.currentScript
+  // let fullUrl = script.src
+  console.log(window.location.pathname)
   if(e.target.id == "refuge"){
     window.open(
-      "../windows/two-bodies.html",
+      window.location.pathname + "/windows/two-bodies.html",
       "targetWindow",
       "popup=yes, width=500, height=500, left=10, top=100, toolbar=no, resizable=no,status=no,menubar=no"
     );
@@ -73,7 +76,7 @@ document.addEventListener("click", (e) =>{
   }
   if(e.target.id == "fulfillment"){
     window.open(
-      "../windows/petals.html",
+      window.location.pathname + "/windows/petals.html",
       "targetWindow",
       "popup=yes, width=640, height=640, left=400, top=200, toolbar=no, resizable=no,status=no,menubar=no"
     );
