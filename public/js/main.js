@@ -68,7 +68,7 @@ document.addEventListener("click", (e) =>{
   console.log(window.location.pathname)
   if(e.target.id == "refuge"){
     window.open(
-      window.location.pathname + "/public/windows/two-bodies.html",
+      window.location.pathname + "/windows/two-bodies.html",
       "bodies",
       "popup=yes, width=500, height=500, left=10, top=100, toolbar=no, resizable=no,status=no,menubar=no"
     );
@@ -76,7 +76,7 @@ document.addEventListener("click", (e) =>{
   }
   if(e.target.id == "fulfillment"){
     window.open(
-      window.location.pathname + "/public/windows/petals.html",
+      window.location.pathname + "/windows/petals.html",
       "petals",
       "popup=yes, width=640, height=640, left=400, top=200, toolbar=no, resizable=no,status=no,menubar=no"
     );
