@@ -98,4 +98,13 @@ document.addEventListener("click", (e) => {
       `popup=yes, width=${w}, height=${h}, left=70, top=600, toolbar=no, resizable=no,status=no,menubar=no`
     );
   }
+  if (e.target.id == "name") {
+    let w = 750;
+    let h = 711;
+    window.open(
+      "http://samheckle.com/limerence/public/windows/non-place.html",
+      "name",
+      `popup=yes, width=${w}, height=${h}, left=700, top=600, toolbar=no, resizable=no,status=no,menubar=no`
+    );
+  }
 });

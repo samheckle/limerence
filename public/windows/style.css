@@ -31,3 +31,16 @@ html, body{
     top: 0;
     left: 0;
 }
+
+#non-place img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#non-place h1{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+}
