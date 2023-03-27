@@ -3,8 +3,18 @@ const background_text =
 
 // loads the sketches when the window has finished loading
 window.onload = () => {
+
+  document.getElementById("land").addEventListener("click", (e)=>{
+    document.getElementById("land").classList.add("hide");
+    document.getElementById("content").classList.remove("hide")
+    document.getElementById("content").classList.add("show")
+    mainTrigger()
+  })
+  
+};
+
+function mainTrigger() {
   sovereignty_sketch();
-  // two_bodies_sketch();
 
   let text_container = document.getElementById("background-text");
   let links = [
@@ -52,34 +62,40 @@ window.onload = () => {
     if (i == words.length) {
       clearInterval(id);
     }
-    // if(text_container.innerHTML.includes("as a refuge for me")){
-    //   let span = document.createElement('span')
-    //   span.innerHTML = "as a refuge for me"
-    //   span.classList.add('link')
-    //   text_container.appendChild(span)
-    // }
-    // }, 30);
   }, 1);
-};
+}
 
-document.addEventListener("click", (e) =>{
-  // let script = document.currentScript
-  // let fullUrl = script.src
-  console.log(window.location.pathname)
-  if(e.target.id == "refuge"){
+document.addEventListener("click", (e) => {
+  console.log(window.location.pathname);
+  if (e.target.id == "refuge") {
     window.open(
-      'http://samheckle.com/limerence/public/windows/two-bodies',
+      "http://samheckle.com/limerence/public/windows/two-bodies",
       "bodies",
       "popup=yes, width=500, height=500, left=10, top=100, toolbar=no, resizable=no,status=no,menubar=no"
     );
     // return false;
   }
-  if(e.target.id == "fulfillment"){
+  if (e.target.id == "fulfillment") {
     window.open(
       "http://samheckle.com/limerence/public/windows/petals.html",
       "petals",
       "popup=yes, width=640, height=640, left=400, top=200, toolbar=no, resizable=no,status=no,menubar=no"
     );
   }
-
-})
+  if (e.target.id == "assertion") {
+    window.open(
+      "http://samheckle.com/limerence/public/windows/static.html",
+      "assertion",
+      "popup=yes, width=600, height=449, left=400, top=200, toolbar=no, resizable=no,status=no,menubar=no"
+    );
+  }
+  if (e.target.id == "injuries") {
+    let w = 2100 / 3;
+    let h = 1500 / 3;
+    window.open(
+      "http://samheckle.com/limerence/public/windows/journal.html",
+      "journals",
+      `popup=yes, width=${w}, height=${h}, left=70, top=600, toolbar=no, resizable=no,status=no,menubar=no`
+    );
+  }
+});
