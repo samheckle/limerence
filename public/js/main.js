@@ -69,7 +69,7 @@ document.addEventListener("click", (e) => {
   console.log(window.location.pathname);
   if (e.target.id == "refuge") {
     window.open(
-      "http://samheckle.com/limerence/public/windows/two-bodies",
+      "http://samheckle.com/limerence/public/windows/two-bodies.html",
       "bodies",
       "popup=yes, width=500, height=500, left=10, top=100, toolbar=no, resizable=no,status=no,menubar=no"
     );
@@ -107,4 +107,19 @@ document.addEventListener("click", (e) => {
       `popup=yes, width=${w}, height=${h}, left=700, top=600, toolbar=no, resizable=no,status=no,menubar=no`
     );
   }
+  if (e.target.id == "figures") {
+    let w = 750;
+    let h = 711;
+    window.open(
+      "http://samheckle.com/limerence/public/windows/blackout.html",
+      "name",
+      `popup=yes, width=${w}, height=${h}, left=700, top=600, toolbar=no, resizable=no,status=no,menubar=no`
+    );
+  }
 });
+
+document.addEventListener('mouseover', (e) =>{
+  if(e.target.id == "wound"){
+    e.target.title = "ouchie"
+  }
+})

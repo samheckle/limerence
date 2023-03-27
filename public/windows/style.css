@@ -37,10 +37,11 @@ html, body{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 0;
 }
 #non-place h1{
     position: absolute;
     left: 50%;
     bottom: 10px;
+    z-index: 2;
 }
