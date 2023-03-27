@@ -90,8 +90,8 @@ document.addEventListener("click", (e) => {
     );
   }
   if (e.target.id == "injuries") {
-    let w = 2100 / 3;
-    let h = 1500 / 3;
+    let w = 1790 / 3;
+    let h = 1343 / 3;
     window.open(
       "http://samheckle.com/limerence/public/windows/journal.html",
       "journals",
