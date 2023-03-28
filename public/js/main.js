@@ -113,7 +113,7 @@ document.addEventListener("click", (e) => {
     window.open(
       "http://samheckle.com/limerence/public/windows/blackout.html",
       "blackout",
-      `popup=yes, width=${w}, height=${h}, left=700, top=600, toolbar=no, resizable=no,status=no,menubar=no`
+      `popup=yes, width=${w}, height=${h}, left=500, top=100, toolbar=no, resizable=no,status=no,menubar=no`
     );
   }
   if (e.target.id == "reciprocal") {
