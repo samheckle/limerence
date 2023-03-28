@@ -108,13 +108,28 @@ document.addEventListener("click", (e) => {
     );
   }
   if (e.target.id == "figures") {
-    let w = 750;
-    let h = 711;
+    let w = 1390/2;
+    let h = 988/2;
     window.open(
       "http://samheckle.com/limerence/public/windows/blackout.html",
       "name",
       `popup=yes, width=${w}, height=${h}, left=700, top=600, toolbar=no, resizable=no,status=no,menubar=no`
     );
+  }
+  if (e.target.id == "reciprocal") {
+    let w = 1402/3;
+    let h = 1419/3;
+    window.open(
+      "http://samheckle.com/limerence/public/windows/rec.html",
+      "name",
+      `popup=yes, width=${w}, height=${h}, left=700, top=600, toolbar=no, resizable=no,status=no,menubar=no`
+    );
+  }
+  if(e.target.id == "wound"){
+    document.getElementById("background-text").classList.add("shake")
+    setTimeout(()=>{
+      document.getElementById("background-text").classList.remove("shake")
+    }, 1000)
   }
 });
 

@@ -9,7 +9,7 @@
     position: relative;
     background-color: rgb(255, 254, 244);
   }
-  body{
+  body {
     display: flex;
     flex-direction: row;
   }
@@ -33,7 +33,7 @@
   .hide {
     display: none;
   }
-  .show{
+  .show {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -119,6 +119,45 @@
   }
   #about-icon img {
     transform: scale(0.6);
+  }
+  #content .shake {
+    animation: shake 0.5s;
+    /* animation-iteration-count: 1; */
+  }
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(-1deg);
+    }
+    20% {
+      transform: rotate(1deg);
+    }
+    30% {
+      transform: rotate(0deg);
+    }
+    40% {
+      transform: rotate(1deg);
+    }
+    50% {
+      transform: rotate(-1deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    70% {
+      transform: rotate(-1deg);
+    }
+    80% {
+      transform: rotate(1deg);
+    }
+    90% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-1deg);
+    }
   }
 }
 @media (min-width: 1025px) {
