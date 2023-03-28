@@ -45,6 +45,9 @@ html, body{
     bottom: 10px;
     z-index: 2;
 }
+#rec{
+    width: 100%;
+}
 #rec img{
     width: 100%;
 }
