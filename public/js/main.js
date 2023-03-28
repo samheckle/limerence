@@ -112,7 +112,7 @@ document.addEventListener("click", (e) => {
     let h = 988/2;
     window.open(
       "http://samheckle.com/limerence/public/windows/blackout.html",
-      "name",
+      "blackout",
       `popup=yes, width=${w}, height=${h}, left=700, top=600, toolbar=no, resizable=no,status=no,menubar=no`
     );
   }
@@ -121,7 +121,7 @@ document.addEventListener("click", (e) => {
     let h = 1419/3;
     window.open(
       "http://samheckle.com/limerence/public/windows/rec.html",
-      "name",
+      "rec",
       `popup=yes, width=${w}, height=${h}, left=700, top=600, toolbar=no, resizable=no,status=no,menubar=no`
     );
   }
