@@ -3,14 +3,12 @@ const background_text =
 
 // loads the sketches when the window has finished loading
 window.onload = () => {
-
-  document.getElementById("land").addEventListener("click", (e)=>{
+  document.getElementById("land").addEventListener("click", (e) => {
     document.getElementById("land").classList.add("hide");
-    document.getElementById("content").classList.remove("hide")
-    document.getElementById("content").classList.add("show")
-    mainTrigger()
-  })
-  
+    document.getElementById("content").classList.remove("hide");
+    document.getElementById("content").classList.add("show");
+    mainTrigger();
+  });
 };
 
 function mainTrigger() {
@@ -49,8 +47,9 @@ function mainTrigger() {
       let a = document.createElement("a");
       a.innerHTML = linkText;
       a.id = links[numLinks];
-      span.classList.add("link");
-      span.classList.add("blur")
+      // span.classList.add("link");
+      span.classList.add('links')
+      span.classList.add("blur");
       span.appendChild(a);
       text_container.appendChild(span);
       link = false;
@@ -61,11 +60,13 @@ function mainTrigger() {
     }
     i++;
     if (i == words.length) {
-      clearInterval(id);
-      let links = document.getElementsByClassName('link')
-      for(let i = 0; i < links.length; i++){
-        links[i].classList.remove('blur')
+      let links = document.getElementsByClassName("links");
+      for (let i = 0; i < links.length; i++) {
+        console.log("test");
+        links[i].classList.add("link");
+        links[i].classList.remove("blur");
       }
+      clearInterval(id);
     }
   }, 1);
 }
@@ -113,8 +114,8 @@ document.addEventListener("click", (e) => {
     );
   }
   if (e.target.id == "figures") {
-    let w = 1390/2;
-    let h = 988/2;
+    let w = 1390 / 2;
+    let h = 988 / 2;
     window.open(
       "http://samheckle.com/limerence/public/windows/blackout.html",
       "blackout",
@@ -122,24 +123,24 @@ document.addEventListener("click", (e) => {
     );
   }
   if (e.target.id == "reciprocal") {
-    let w = 1402/3;
-    let h = 1419/3;
+    let w = 1402 / 3;
+    let h = 1419 / 3;
     window.open(
       "http://samheckle.com/limerence/public/windows/rec.html",
       "rec",
       `popup=yes, width=${w}, height=${h}, left=700, top=600, toolbar=no, resizable=no,status=no,menubar=no`
     );
   }
-  if(e.target.id == "wound"){
-    document.getElementById("background-text").classList.add("shake")
-    setTimeout(()=>{
-      document.getElementById("background-text").classList.remove("shake")
-    }, 1000)
+  if (e.target.id == "wound") {
+    document.getElementById("background-text").classList.add("shake");
+    setTimeout(() => {
+      document.getElementById("background-text").classList.remove("shake");
+    }, 1000);
   }
 });
 
-document.addEventListener('mouseover', (e) =>{
-  if(e.target.id == "wound"){
-    e.target.title = "ouchie"
+document.addEventListener("mouseover", (e) => {
+  if (e.target.id == "wound") {
+    e.target.title = "ouchie";
   }
-})
+});
