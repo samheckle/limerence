@@ -50,6 +50,7 @@ function mainTrigger() {
       a.innerHTML = linkText;
       a.id = links[numLinks];
       span.classList.add("link");
+      span.classList.add("blur")
       span.appendChild(a);
       text_container.appendChild(span);
       link = false;
@@ -61,6 +62,10 @@ function mainTrigger() {
     i++;
     if (i == words.length) {
       clearInterval(id);
+      let links = document.getElementsByClassName('link')
+      for(let i = 0; i < links.length; i++){
+        links[i].classList.remove('blur')
+      }
     }
   }, 1);
 }
