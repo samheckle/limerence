@@ -75,7 +75,7 @@ document.addEventListener("click", (e) => {
   console.log(window.location.pathname);
   if (e.target.id == "refuge") {
     window.open(
-      "http://samheckle.com/limerence/public/windows/two-bodies.html",
+      "https://samheckle.github.io/limerence/public/windows/two-bodies.html",
       "bodies",
       "popup=yes, width=500, height=500, left=10, top=100, toolbar=no, resizable=no,status=no,menubar=no"
     );
@@ -83,14 +83,14 @@ document.addEventListener("click", (e) => {
   }
   if (e.target.id == "fulfillment") {
     window.open(
-      "http://samheckle.com/limerence/public/windows/petals.html",
+      "https://samheckle.github.io/limerence/public/windows/petals.html",
       "petals",
       "popup=yes, width=640, height=640, left=400, top=200, toolbar=no, resizable=no,status=no,menubar=no"
     );
   }
   if (e.target.id == "assertion") {
     window.open(
-      "http://samheckle.com/limerence/public/windows/static.html",
+      "https://samheckle.github.io/limerence/public/windows/static.html",
       "assertion",
       "popup=yes, width=600, height=449, left=400, top=200, toolbar=no, resizable=no,status=no,menubar=no"
     );
@@ -99,7 +99,7 @@ document.addEventListener("click", (e) => {
     let w = 1790 / 3;
     let h = 1343 / 3;
     window.open(
-      "http://samheckle.com/limerence/public/windows/journal.html",
+      "https://samheckle.github.io/limerence/public/windows/journal.html",
       "journals",
       `popup=yes, width=${w}, height=${h}, left=70, top=600, toolbar=no, resizable=no,status=no,menubar=no`
     );
@@ -108,7 +108,7 @@ document.addEventListener("click", (e) => {
     let w = 750;
     let h = 711;
     window.open(
-      "http://samheckle.com/limerence/public/windows/non-place.html",
+      "https://samheckle.github.io/limerence/public/windows/non-place.html",
       "name",
       `popup=yes, width=${w}, height=${h}, left=700, top=600, toolbar=no, resizable=no,status=no,menubar=no`
     );
@@ -117,7 +117,7 @@ document.addEventListener("click", (e) => {
     let w = 1390 / 2;
     let h = 988 / 2;
     window.open(
-      "http://samheckle.com/limerence/public/windows/blackout.html",
+      "https://samheckle.github.io/limerence/public/windows/blackout.html",
       "blackout",
       `popup=yes, width=${w}, height=${h}, left=500, top=100, toolbar=no, resizable=no,status=no,menubar=no`
     );
@@ -126,7 +126,7 @@ document.addEventListener("click", (e) => {
     let w = 1402 / 3;
     let h = 1419 / 3;
     window.open(
-      "http://samheckle.com/limerence/public/windows/rec.html",
+      "https://samheckle.github.io/limerence/public/windows/rec.html",
       "rec",
       `popup=yes, width=${w}, height=${h}, left=700, top=600, toolbar=no, resizable=no,status=no,menubar=no`
     );
